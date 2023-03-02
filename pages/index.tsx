@@ -14,7 +14,7 @@ export const getServerSideProps: GetServerSideProps<
 > = async () => {
   // await new Promise(r => setTimeout(r, 3000))
   const response = await fetch(
-    `https://newsapi.org/v2/top-headlines?q=covid&apiKey=${process.env.NEWS_API_KEY}`
+    `https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.NEWS_API_KEY}`
   )
   const newsResponse: NewsResponse = await response.json()
   // console.log(newsResponse)
@@ -35,7 +35,7 @@ export default function BreakingNewsPage({
         <title key='title'>Breaking News - NextJS News App</title>
       </Head>
       <main>
-        <h1>Breaking News</h1>
+        <h1>Breaking News s</h1>
         <Alert>
           This page uses <strong>getServerSideProps</strong> to fetch data
           server-side on every request. This allows search engines to crawl the

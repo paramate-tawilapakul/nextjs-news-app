@@ -35,7 +35,7 @@ export default function BreakingNewsPage({
         <title key='title'>Breaking News - NextJS News App</title>
       </Head>
       <main>
-        <h1>Breaking News s</h1>
+        <h1>Breaking News</h1>
         <Alert>
           This page uses <strong>getServerSideProps</strong> to fetch data
           server-side on every request. This allows search engines to crawl the
